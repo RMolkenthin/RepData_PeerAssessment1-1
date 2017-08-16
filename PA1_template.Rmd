@@ -12,7 +12,7 @@ The document describes the steps done to solve the peer assessment assignment.
 ## Required libraries
 ```{r setup, include=FALSE}
 require("knitr")
-knitr::opts_chunk$set(echo = TRUE, cache=TRUE, cache.path = 'test_files/', fig.path='figure/')
+knitr::opts_chunk$set(echo = TRUE, cache=TRUE, cache.path = 'test_files/', fig.path='./figure/')
 
 library(dplyr)
 library(ggplot2)
