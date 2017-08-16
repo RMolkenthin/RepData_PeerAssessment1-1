@@ -12,7 +12,7 @@ The document describes the steps done to solve the peer assessment assignment.
 ## Required libraries
 ```{r setup, include=FALSE}
 require("knitr")
-knitr::opts_chunk$set(echo = TRUE, cache=TRUE, cache.path = 'test_files/', fig.path='./figure/')
+knitr::opts_chunk$set(echo = TRUE, cache=TRUE, cache.path = 'test_files/', fig.path='figure/')
 
 library(dplyr)
 library(ggplot2)
@@ -52,7 +52,7 @@ df_act$date <- as.Date(df_act$date, format = "%Y-%m-%d")
 ### Histogram of the total steps per day
 The following code creates a histogram which shows the distribution of the daily total number of steps between Oct 1 and Nov 30, 2012. For grouping and aggregating the steps dplyr is used. 
 
-```{r Histogram and Stats, echo = TRUE}
+```{r HistogramAndStats, echo = TRUE}
 
 df01 <- df_act %>% group_by(date) %>% summarize(totalSteps = sum(steps))
 
