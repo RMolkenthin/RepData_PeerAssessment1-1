@@ -90,7 +90,7 @@ ggplot(df02, aes(x = interval, y = avgSteps)) +
     scale_y_continuous(breaks = seq(0, 500, 20))
 ```
 
-![](figure/average dailypattern-1.png)<!-- -->
+![](figure/AverageDailypattern-1.png)<!-- -->
 
 The following table spedifies the peak and determines the related interval.
 
@@ -144,7 +144,7 @@ ggplot(df03, aes(totalSteps)) +
     scale_y_continuous(breaks = seq(0, 12, 1))
 ```
 
-![](figure/histogram after replacement-1.png)<!-- -->
+![](figure/HistogramAfterReplacement-1.png)<!-- -->
 
 The following table shows that there are minor changes regarding mean and median compared to the calculation without any missing value replacement. 
 
@@ -187,5 +187,5 @@ ggplot(df04, aes(x = interval, y = avgStepsInt, color = day)) +
     theme(legend.position = "none")
 ```
 
-![](figure/Weekdays-Weekends plot-1.png)<!-- -->
+![](figure/WeekdaysWeekendsPlot-1.png)<!-- -->
 
